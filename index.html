@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acertijos de Snoopy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>🐾 Acertijos de Snoopy 🐾</h1>
+    <p>Pon a prueba tu ingenio con estos acertijos divertidos</p>
+  </header>
+
+  <main>
+    <section class="quiz">
+      <div class="question">
+        <h2>1. ¿Cuál es el mejor amigo humano de Snoopy?</h2>
+        <button onclick="checkAnswer(1, 'Charlie Brown')">Charlie Brown</button>
+        <button onclick="checkAnswer(1, 'Woodstock')">Woodstock</button>
+        <button onclick="checkAnswer(1, 'Lucy')">Lucy</button>
+        <p id="result1" class="result"></p>
+      </div>
+
+      <div class="question">
+        <h2>2. ¿Qué pájaro amarillo siempre acompaña a Snoopy?</h2>
+        <button onclick="checkAnswer(2, 'Tweety')">Tweety</button>
+        <button onclick="checkAnswer(2, 'Woodstock')">Woodstock</button>
+        <button onclick="checkAnswer(2, 'Donald')">Donald</button>
+        <p id="result2" class="result"></p>
+      </div>
+
+      <div class="question">
+        <h2>3. ¿Dónde suele imaginar Snoopy que está cuando se sube a su casita roja?</h2>
+        <button onclick="checkAnswer(3, 'En la luna')">En la luna</button>
+        <button onclick="checkAnswer(3, 'Como piloto de avión en la Primera Guerra Mundial')">Como piloto en la Primera Guerra Mundial</button>
+        <button onclick="checkAnswer(3, 'En la playa')">En la playa</button>
+        <p id="result3" class="result"></p>
+      </div>
+    </section>
+
+    <section id="finalMessage"></section>
+  </main>
+
+  <footer>
+    <p>✨ Página de acertijos hecha con cariño para fans de Snoopy ✨</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
