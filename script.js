@@ -2,7 +2,14 @@
 const answers = {
   1: "Charlie Brown",
   2: "Woodstock",
-  3: "Como piloto de avión en la Primera Guerra Mundial"
+  3: "Como piloto de avión en la Primera Guerra Mundial",
+  4: "Snoopy",
+  5: "Beagle",
+  6: "Woodstock",
+  7: "Escribir",
+  8: "Spike",
+  9: "Lucy",
+  10: "Béisbol"
 };
 
 let score = 0;
@@ -29,9 +36,9 @@ function checkAnswer(question, answer) {
 
 function showFinalMessage() {
   const final = document.getElementById("finalMessage");
-  if (score === 3) {
-    final.textContent = "🎉 ¡Eres un verdadero fan de Snoopy! 🐶";
+  if (score === 10) {
+    final.innerHTML = "🎉 ¡Eres un verdadero fan de Snoopy! 🐶 <img src='https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3MxMW43MnZncmJpYzNvbzFhcTdkOTlmaHp3dWNodnhlZHMzZWx6eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohzdScjhzs4WnJ0Os/giphy.gif' alt='Snoopy' />";
   } else {
-    final.textContent = `Obtuviste ${score}/3 respuestas correctas. ¡Sigue intentando!`;
+    final.innerHTML = `Obtuviste ${score}/10 respuestas correctas. ¡Sigue intentando! <img src='https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExczhhOXRzMW84ZDA5MnhsNWtmc2gxcHp6YjVjZnZ2eDQ1OXo3djFndCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/URbV2h1nOH2X6/giphy.gif' alt='Snoopy' />`;
   }
 }
